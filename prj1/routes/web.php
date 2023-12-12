@@ -13,9 +13,8 @@ Route::get('/home', function () {
 });
 
 // Rotas de usuários
-Route::get('/users',function(){
-    return view('users/register');
-});
+
+Route::get('/users',[UserController::class, 'register']);
 Route::get('/users/createScreen',function(){
     return view('users/create');
 });

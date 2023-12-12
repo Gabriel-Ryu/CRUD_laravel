@@ -39,21 +39,22 @@
     'GRAD' 0,
     'opsz' 24
 }
-.personal-image{
-    width:100%;
-    height: 100%;
-    border-radius: 100%;
-    border-color: rgb(62, 106, 201);
-    border: 1;
-    border-style: solid;
-    border-width: 2px;
-    cursor: pointer;
-}
-
 .container-personal-image{
     width: 8%;
     height: 8%;
+    object-fit: cover;
     padding-right: 2%;
+}
+
+.personal-image{
+    width:3vw;
+    height: 3vw;
+    object-fit: cover;
+    border-radius: 100%;
+    border-color: rgb(62, 106, 201);
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
 }
 
 .play-button{
@@ -113,8 +114,9 @@
     height: 35%;
 }
 .img-profile{
-    width:100%;
-    height: 100%;
+    width:8vw;
+    height: 8vw;
+    object-fit: cover;
     border-radius: 100%;
     border-color: rgb(62, 106, 201);
     border: 1;

@@ -7,3 +7,15 @@ function checkPassword(){
         confirmPassword.value = '';
     }
 }
+function checkUsername(){
+    const alert = document.getElementById("label-alert");
+    const actualStyle = alert.style.display;
+    usernameDB = document.getElementById("access_nameDB");
+    username = document.getElementById("access_name");
+    if(usernameDB.value == username.value){
+        alert.style.display = 'block';
+    }
+    else{
+        alert.style.display = 'none';
+    }
+}

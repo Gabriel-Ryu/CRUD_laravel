@@ -16,11 +16,15 @@
             <div class = "label-title">Create a account</div>
         </div>
         <div class="main-container">
-            <form action="/users/register" method="post">
+            <form action="/users/register" method="post" enctype="multipart/form-data">
+                        <input type="hidden" id="access_nameDB" name="access_nameDB" value="<?= $user['access_name'] ?>"></input>
                 <div class = "label">Name</div>
                 <input type="text" name="name" id="name" class="textbox">
-                <div class = "label">Username</div>
-                <input type="text" name="access_name" id="access_name" class="textbox">
+                <div class="username-container">
+                    <div class = "label">Username</div>
+                    <div id = "label-alert" class = "label-alert">This username alreadyin use!</div>
+                </div>
+                <input type="text" name="access_name" id="access_name" class="textbox" onblur="checkUsername()">
                 <div class = "label">Email</div>
                 <input type="email" name="email" id="email" class="textbox">
                 <div class = "label">Password</div>
@@ -29,7 +33,7 @@
                 <input type="password" name="confirmation_password" id="password-confirmation" class="textbox" onblur="checkPassword()">
                 <div class="img-container">
                 <div class = "label">Put a image for your profile</div>
-                <input type="file" name="img-profile" id="img-profile" class="img-profile" value = "image">
+                <input type="file" name="image" id="image" class="img-profile" value = "image">
             </div>
                 <?php echo csrf_field();?>
                 <input type="submit" value="Create" class="submit">

@@ -23,7 +23,7 @@
                 <p>|</p>
                 <a href="users/select">Users</a>
                 <div class="container-personal-image">
-                    <img src="/images/profileTeste.png" alt="" class="personal-image" onclick="openMenu()">
+                    <img src="/images/profileImages/<?php echo $user->image?>" alt="" class="personal-image" onclick="openMenu()">
                 </div>
              </div>
         </div>
@@ -43,7 +43,7 @@
             </div>
             <div class="header-profile-modal">
                 <div class="img-profile-container">
-                    <img src="/images/profileTeste.png" alt="" class="img-profile">
+                    <img src="/images/profileImages/<?php echo $user->image?>" alt="" class="img-profile">
                 </div>
             </div>
             <div class="exit-container">

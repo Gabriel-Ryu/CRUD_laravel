@@ -17,6 +17,12 @@
     padding: 5px;
     font-size: 15px;
 }
+.main-container .label-alert{
+    display: none;
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(224, 0, 0);
+}
 .main-container .textbox{
     padding: 5px;
     width: 100%;
@@ -53,4 +59,9 @@
     border-color: grey;
     border-style: solid;
     border-radius: 10px;
+}
+.username-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
